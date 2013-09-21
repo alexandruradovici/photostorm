@@ -1,0 +1,29 @@
+# Project: Project1
+# Makefile created by Dev-C++ 4.9.8.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = compile_psl.o $(RES)
+LINKOBJ  = compile_psl.o $(RES)
+LIBS =  -L"F:/Soft/Dev-C++5/lib" -L"C:/Program Files/Common Files/GTK/2.0/lib"  ../../../Soft/Dev-C++5/lib/zdll.dll.a 
+INCS =  -I"F:/Soft/Dev-C++5/include" 
+CXXINCS =  -I"F:/Soft/Dev-C++5/include/c++"  -I"F:/Soft/Dev-C++5/include/c++/mingw32"  -I"F:/Soft/Dev-C++5/include/c++/backward"  -I"F:/Soft/Dev-C++5/include" 
+BIN  = compile_psl.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS = $(INCS) 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before compile_psl.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) $(LINKOBJ) -o "compile_psl.exe" $(LIBS)
+
+compile_psl.o: compile_psl.cpp
+	$(CPP) -c compile_psl.cpp -o compile_psl.o $(CXXFLAGS)

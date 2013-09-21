@@ -1,0 +1,36 @@
+# Project: demo_plugin
+# Makefile created by Dev-C++ 4.9.8.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = demo_plugin_private.res
+OBJ  = dllmain.o $(RES)
+LINKOBJ  = dllmain.o $(RES)
+LIBS =  -L"F:/Soft/Dev-C++5/lib" -L"C:/Program Files/Common Files/GTK/2.0/lib" --add-stdcall-alias 
+INCS =  -I"F:/Soft/Dev-C++5/include" 
+CXXINCS =  -I"F:/Soft/Dev-C++5/include/c++"  -I"F:/Soft/Dev-C++5/include/c++/mingw32"  -I"F:/Soft/Dev-C++5/include/c++/backward"  -I"F:/Soft/Dev-C++5/include" 
+BIN  = demo_plugin.dll
+CXXFLAGS = $(CXXINCS) 
+CFLAGS = $(INCS)-DBUILDING_DLL=1  
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before demo_plugin.dll all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+DLLWRAP=dllwrap.exe
+DEFFILE=libdemo_plugin.def
+STATICLIB=libdemo_plugin.a
+
+$(BIN): $(LINKOBJ)
+	$(DLLWRAP) --output-def $(DEFFILE) --driver-name c++ --implib $(STATICLIB) $(LINKOBJ) $(LIBS) -o $(BIN)
+
+dllmain.o: dllmain.cpp
+	$(CPP) -c dllmain.cpp -o dllmain.o $(CXXFLAGS)
+
+demo_plugin_private.res: demo_plugin_private.rc 
+	$(WINDRES) -i demo_plugin_private.rc -I rc -o demo_plugin_private.res -O coff 

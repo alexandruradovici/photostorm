@@ -1,0 +1,22 @@
+# TODO: we should probably obtain these from a Win32 IconMetrics struct
+gtk-icon-sizes="gtk-menu=12,12:gtk-small-toolbar=12,12:gtk-large-toolbar=16,16:gtk-dnd=32,32"
+gtk-button-images=0
+
+style "msw-default"
+{
+  GtkWidget::interior_focus = 1
+  GtkOptionMenu::indicator_size = { 9, 5 }
+  GtkOptionMenu::indicator_spacing = { 7, 5, 2, 2 }
+  GtkMenuBar::shadow-type = none
+  GtkToolbar::shadow-type = etched-in
+  GtkHandleBox::shadow-type = none
+  GtkSpinButton::shadow-type = in
+
+  GtkTreeView::allow-rules = 0
+  GtkTreeView::expander_size = 11
+  
+  engine "wimp" 
+  {
+  }
+}
+class "*" style "msw-default"

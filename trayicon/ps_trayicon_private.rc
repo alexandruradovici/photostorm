@@ -1,0 +1,33 @@
+// THIS FILE WILL BE OVERWRITTEN BY DEV-C++!
+// DO NOT EDIT!
+
+#include <windows.h> // include for version info constants
+
+#include "resurse.rc"
+
+A ICON MOVEABLE PURE LOADONCALL DISCARDABLE "ps_trayicon.ico"
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 0,1,1,46
+PRODUCTVERSION 0,1,1,46
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "040904E4"
+		 {
+			 VALUE "CompanyName", "Project Info"
+			 VALUE "FileVersion", "Win32-0.1.1"
+			 VALUE "FileDescription", "PhotoStorm Desktop Server"
+			 VALUE "InternalName", "ps_trayicon"
+			 VALUE "LegalCopyright", "Project Info 2004 under the GNU GPL License"
+			 VALUE "LegalTrademarks", ""
+			 VALUE "OriginalFilename", ""
+			 VALUE "ProductName", "PhotoStorm tray Icon"
+			 VALUE "ProductVersion", "Win32-0.1.1"
+		 }
+	 }
+}

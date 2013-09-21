@@ -1,0 +1,155 @@
+<center><img src="/images/dwlphotostorm.jpg" border=0 align="center"><br><br>
+<table width=700 cellspacing=2 cellpadding=2 class="window_white_border">
+<th colspan=2 bgcolor=#9c9c9c><b>License</b></th>
+<tr>
+	<td colspan=2 valign="top" align="left" class="window_white_border"><b>Before downloading anything please read the following. By downloading any data from this website you AGREE to these TERMS.</b>
+	<ul>
+		<li>This software is provided AS IS! You may use it on your own risk.</li>
+		<li>This software is distributed under the <a href="/gpl.txt" target="_blank"><font color=#FFFF00>GNU GPL License</font></a></li>
+	</ul>
+	</td>
+</tr>
+<th colspan=2 bgcolor=#9c9c9c><b>PhotoStorm Desktop</b></th>
+<tr>
+	<td colspan=2 valign="top" align="center" class="window_white_border">
+	<b><a href="#linux"><font color=#FFFF00>Linux</font></a></b> | <b><a href="#win32"><font color=#FFFF00>Microsoft<sup>TM</sup> Windows<sup>TM</sup></font></a></b> | <b><a href="#online"><font color=#FFFF00>Online Wallpaper</font></a></b>
+	</td>
+</tr>
+<th colspan=2 bgcolor=#9c9c9c>Download PhotoStorm</th>
+<tr>
+	<td width=150 valign="top" align="center" class="window_white_border"><b>System</b></td>
+	<td valign="top" align="center" class="window_white_border"><b>Files</b></td>
+</tr>
+</table>
+<a name="linux"></a>
+<table width=700 cellspacing=2 cellpadding=2 class="window_white_border">
+<tr>
+	<td width=150 valign="top" align="center" class="window_white_border"><img src=/images/linux.jpg></td>
+	<td valign="top" align="left" class="window_white_border">
+	<font size=3><b><i>PhotoStorm 0.1.1 - NEW</i></b></font><br>
+	PhotoStorm Desktop for Linux is now available as an RPM Package. It requires <b>GTK >=2.4</b>.
+	<ul>
+	    <li><a href=/download/linux/photostorm-0.1.1-fc2.i386.rpm><font color=#FFFF00>PhotoStorm RPM Package for Fedora Core 2</font></a> - it might work also on other rpm based distributions.</li>
+	</ul>
+	If your distribution does not support rpm packages or the rpm package does not work, you may get photostorm as five tar-balls.
+	<ul>
+		<li><a href=/download/linux/install_photostorm-0.1.1.sh><font color=#FFFF00>Install Script v0.1.1</font></a></li>
+		<li><a href=/download/linux/uninstall_photostorm.sh><font color=#FFFF00>Uninstall Script</font></a></li>
+		<li><a href=/download/linux/photostorm-bin-0.1.1.tgz><font color=#FFFF00>Binaries v0.1.1</font></a></li>
+		<li><a href=/download/linux/photostorm-data-0.1.1.tgz><font color=#FFFF00>Data Files v0.1.1</font></a></li>
+		<li><a href=/download/linux/photostorm-source-linux-0.1.1.tgz><font color=#FFFF00>Source Linux v0.1.1</font></a></li>
+	</ul>
+	<font color=#FFFF00>If you have downloaded photostorm as a binary tarball and a data tarball and the CALENDAR is NOT WORKING
+	you just have to login as <i>root</i> and use the following command <pre>chmod 644 /usr/local/lib/photostorm/fonts/monosb.ttf</pre>.
+	if you have installed photostorm in an other location than <i>/usr/local/lib/photostorm</i> than you just have to place the right path
+	to put the path where you installed photostorm instead of <i>/usr/local/lib/photostorm.</i></font>
+	<br>
+	For more information on how to install PhotoStorm Desktop like this, please read "Installing PhotoStorm", a little bit lower on the page.
+	<hr class="window_white_border">
+	<font size=3><b><i>PhotoStorm v0.1 - THIS IS AN OLD VERSION</i></b></font><br><br>
+	PhotoStorm Desktop for Linux is divided in four packages + the source:
+	<ul>
+		<li><a href=/download/linux/install_photostorm.sh><font color=#FFFF00>Install Script</font></a></li>
+		<li><a href=/download/linux/uninstall_photostorm.sh><font color=#FFFF00>Uninstall Script</font></a></li>
+		<li><a href=/download/linux/photostorm-bin-0.1.tgz><font color=#FFFF00>Binaries v0.1</font></a></li>
+		<li><a href=/download/linux/photostorm-data-0.1.tgz><font color=#FFFF00>Data Files v0.1</font></a></li>
+		<li><a href=/download/linux/photostorm-source-0.1.tgz><font color=#FFFF00>Source v0.1</font></a></li>
+	</ul>
+	<p align="justify">The first two are the scripts for installing/uninstalling photostorm in <i>/usr/local</i>. If you want to install photostorm
+	manually, please read the instructions below. This package should be updated from time to time.
+	<p align="justify">The binaries package contains the core files (executables) of PhotoStorm. They have been compiled for Linux, under Fedora Core 1, GCC 3.2
+	<p align="justify">The data package contains the files needed for photostorm to run properly. It might start without them, but it won't work properly. Usualy this
+	package is downloaded only once and does not need updates.
+	<p align="justify">The source is not very stable yet and we don't recomand you to use it as it will be difficult to compile. Use it just in case the binaries do not work.
+	<!-- Install -->
+	<hr class="window_white_border"><b>I. Installing PhotoStorm</b><br><br><b>Read the following instruction in order to install PhotoStorm</b>
+	<ul>
+		<li>Download the first four packages (scripts + binaries + data)</li>
+		<li>Login as <i>root</i></li>
+		<li>Make sure that the scripts have the permission to run (<i>chmod a+x install_photostorm.sh uninstall_photostorm.sh</i>)</li>
+		<li>Run <i>install_photostorm</i> - this will install photostorm in <i>/usr/local/bin</i> - binaries and <i>/usr/local/lib/photostorm</i></li>
+		<li>If the script runs correctly, you should now be able to start photostorm. Please read the section <i>Running PhotoStorm</i></li>
+	</ul>
+	<!-- Install Manual -->
+	<hr class="window_white_border"><b>II. Installing PhotoStorm Manually</b><br><br><b>Read the following instruction in order to install PhotoStorm manually, without the install script</b>
+	<ul>
+		<li>Download the two packages (binaries + data)</li>
+		<li>Login as <i>root</i></li>
+		<li>Untar the binaries <i>tar xvfz photostorm-bin-0.1.tgz -C "location to place binaries"</i>
+		<pre>eg:
+	tar xvfz photostorm-bin-0.1.tgz -C /usr/bin
+		</pre>
+		This will install photostorm binaries in <i>/usr/bin</i>
+		</li>
+		<li>Untar the binaries <i>tar xvfz photostorm-bin-0.1.tgz -C "location to place binaries"</i>
+		<pre>eg:
+	tar xvfz photostorm-data-0.1.tgz -C /usr/lib
+		</pre>
+		This will install photostorm data files in <i>/usr/lib</i> in a folder photostorm.
+		</li>
+	</ul>
+	<!-- Running PhotoStorm -->
+	<hr class="window_white_border"><b>III. Running PhotoStorm</b><br><br><b>Read the following instruction in order to run PhotoStorm</b>
+	<ul>
+		<li>You can start the gnome panel applet from <i>Add to Panel</i> -> <i>Multimedia</i> -> <i>PhotoStorm</i> This applet controls the updating of the wallpaper and its functions. You should run it.</li>
+		<li>You can start PhotoStorm by simply typing <i>photostorm</i> in the comand line.</li>
+	</ul>
+	<!-- Building the source code -->
+	<hr class="window_white_border"><b>IV. Building the source code</b><br><br><b>Read the following instruction in order to build PhotoStorm from its source code</b>
+	<ul>
+		<li>Untar <i>photostorm-src-0.1.tgz</i> (<i>tar xvfz photostorm-src-0.1.tgz</i>)</li>
+		<li>You should have now a folder called photostorm-0.1</li>
+		<li>Change the folder to <i>photostorm-0.1</i></li>
+		<li>Type <i>make all</i> - this will build <i>photostorm</i> and <i>ps_wallpaper</i></li>
+		<li>Change the directory to <i>applet</i></li>
+		<li>Type <i>make applet</i> - this will build <i>ps_applet</i></li>
+		<li>Now you have the three binaries, you have to copy them in a binaries folder (<i>/usr/bin</i>, <i>/usr.local.bin</i>, or anywhere else in the search path</li>
+		<li>Install the photostorm data pakcage (see part I)</li>
+		<li>PhotoStorm yould work now</li>
+	</ul>
+	If you have any problems with building the source, please mail at <a href="mailto:source@photostorm.net"><font color=#FFFF00>source@photostorm.net</font></a>
+	<!-- Trobleshooting -->
+	<hr class="window_white_border"><b>V. Troubleshooting</b><br><br><b>If you havce any problems with PhotoStorm, please try one of the following</b>
+	<ul>
+		<li>If you have any problems with using photostorm, please email at <a href="mailto:contact@photostorm.net"><font color=#FFFF00>contact@photostorm.net</font></a></li>
+		<li>If you have any bugs, please email at <a href="mailto:bugs@photostorm.net"><font color=#FFFF00>bugs@photostorm.net</font></a></li>
+	</ul>H
+	Thank you very much.
+	</td>
+</tr>
+</table>
+<a name="win32"></a>
+<table width=700 cellspacing=2 cellpadding=2 class="window_white_border">
+<tr>
+	<td width=150 valign="top" align="center" class="window_white_border"><img src=/images/windows.jpg></td>
+	<td valign="top" align="left" class="window_white_border">
+	<font size=3><b><i>PhotoStorm 0.1.1 - FIXED GTK+ WARNINGS FOR Windows 98/Me</i></b></font><br>
+	PhotoStorm Desktop for Microsoft<sup>TM</sup> Windows<sup>TM</sup> is available in two packages:
+	<ul>
+		<li><a href="/download/win32/PhotoStorm_with_Gtk_Win32-0.1.1.exe"><font color=#FFFF00>PhotoStorm Desktop Win32-0.1.1 with GTK 2.4.3-Rev-a Libraries</font></a> (~6.5 MB)</li>
+		<li><a href="/download/win32/PhotoStorm_Win32-0.1.1.exe"><font color=#FFFF00>PhotoStorm Desktop Win32-0.1.1 without GTK Libraries</font></a> (~2.7 MB)</li>
+	</ul>
+	You may also download the <a href="/download/win32/gtk-runtime-2.4.3-rev-a.exe"><font color=#FFFF00>GTK 2.4.3-Rev-a Runtime</font></a> installer.
+	<hr>
+	<center><b>IMPORTANT!!!</b></center><br>
+	<p align=justify>PhotoStorm Desktop for Microsoft<sup>TM</sup> Windows<sup>TM</sup> requires the GTK Runtime Libraries 2.4 or higher. You may install them by yourself, but
+	the registry settings must be the same as the ones made by the GTK Libraries Installer.
+	<p align=justify>If you are not sure about what to download, we recommand you the first package, the one with the GTK Libraries included.
+	<hr>
+	Please note that PhotoStorm Desktop will install the WIMP GTK Theme Engine.
+	</td>
+</tr>
+</table>
+<a name="online"></a>
+<a name="others"></a>
+<table width=700 cellspacing=2 cellpadding=2 class="window_white_border">
+<tr>
+	<td width=150 valign="top" align="center" class="window_white_border"><img src=/images/others.jpg></td>
+	<td valign="top" align="left" class="window_white_border">
+	<p align="justify">PhotoStorm Desktop is available only for Microsoft<sup>TM</sup> Windows<sup>TM</sup> and Linux. For other systems,
+	you can use the <font color=#FFFF00>online wallpaper</font> feature.
+	<b>Just choose a picture that you like and click <b>Make Wallpaper<b> or the image <img src=/images/pics/display.jpg width=24 height=24>.
+	</td>
+</tr>
+</table>
+</center>

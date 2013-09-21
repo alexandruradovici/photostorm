@@ -1,0 +1,38 @@
+#lang	Romana
+#lang_id	1
+#authors	Alexandru Radovici
+#vesrion	0.1-dev
+    O traducerea este considerata completa daca versiunea ei corespunde cu
+    versiunea programului
+#date	06/02/2004
+#font 	_normal
+
+@`Welcome to %s version %s`	`Bun venit la %s versiunea %s`
+@`Error loading picture from file "%s" (GTK2: %s)`	`Eroare la incarcarea imaginii din fisierul "%s" (GTK2: %s)`
+@`Albums`	`Albume`
+@`Add, edit or delete albums`	`Adaugti, modificati sau stergeti albume`
+@`Photo`	`Fotografie`
+@`Photos`	`Fotografii`
+@`Help`	`Ajutor`
+@`Add, edit, delete, set as wallpaper and other actions related to the current photo.`	`Adaugati, editati, stergeti, puneti drept tapet al ecranului si alte actiuni legate de fotografia curenta`
+@`Add`	`Adauga`
+@`Add one or more photos to the current album`	`Adaugati una sau mai multe fotografii albumului curent`
+@`Properties`	`Propietati`
+@`Edit the current photo's properties`	`Editati propietatiile fotografiei curente`
+@`Remove`	`Sterge`
+@`Remove the current photo from the album`	`Stergeti fotografia curenta din album`
+@`Settings`	`Configurare`
+@`Configure the way PhotoStorm works (wallpaper, screensaver, etc.)`	`Configureaza felul in care lucreaza PhotoStorm (tapetul ecranului, protectia ecranului etc.)`
+@`Help`	`Ajutor`
+@`Get help for using PhotoStorm.`	`Ajutor pentru folosirea PhotoStorm.`
+@`Visit the PhotoStorm website. Download photos and albums or share yours.`	`Vizitati pagina de internet a PhotoStorm. Descarcati fotografii si albume sau publicati albumele si fotografiile dumneavoastra.`
+@`Error while attepmting to scale a picture`	`Eroare la incercarea de a redimensiona o imagine`
+@`Author`	`Autor`
+@`Description`	`Descriere`
+@`About`	`Despre`
+@`Set as Wallpaper`	`Pune pe ecran`
+@`Export`	`Exporta`
+@`Photos`	`Fotografii`
+@`Open`	`Deschide`
+@`Cancel`	`Renunta`
+@`Select Files`	`Alegeti Fisierele`

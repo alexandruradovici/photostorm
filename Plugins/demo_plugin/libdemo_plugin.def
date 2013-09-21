@@ -1,0 +1,3 @@
+; dlltool --base-file C:\DOCUME~1\alex\LOCALS~1\Temp/cca00968.base --output-exp demo_plugin.exp --dllname demo_plugin.dll --output-def libdemo_plugin.def --add-stdcall-alias --exclude-symbol=DllMainCRTStartup@12 --def C:\DOCUME~1\alex\LOCALS~1\Temp/cca00968.def --output-lib libdemo_plugin.a
+EXPORTS
+	ps_plugin_info @ 1 DATA ; 

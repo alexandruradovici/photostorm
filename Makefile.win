@@ -1,0 +1,77 @@
+# Project: PhotoStorm
+# Makefile created by Dev-C++ 4.9.8.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = PhotoStorm_private.res
+OBJ  = album.o design.o main.o misc.o photo.o ps_dialogs.o ps_widgets.o ps_wizards.o lang/translate.o configs.o mail.o quotes.o ps_win32.o crypt.o plugins.o messages.o $(RES)
+LINKOBJ  = album.o design.o main.o misc.o photo.o ps_dialogs.o ps_widgets.o ps_wizards.o lang/translate.o configs.o mail.o quotes.o ps_win32.o crypt.o plugins.o messages.o $(RES)
+LIBS =  -L"F:/Soft/Dev-C++5/lib" -L"C:/Program Files/Common Files/GTK/2.0/lib" -L"F:/Soft/Dev-C++5/lib/gtk-2.0" -L"F:/Soft/Dev-C++5/lib/glib-2.0" -L"F:/Proiecte/PhotoStorm/gdlib" -mwindows -lgtk-win32-2.0 -lgdk-win32-2.0 -lgthread-2.0 -lgdi32 -lole32 -luuid -latk-1.0 -lgdk_pixbuf-2.0 -lpangowin32-1.0 -lgdi32 -lpango-1.0 -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 -lintl  -liconv -lbgd -lwsock32  ../../Soft/Dev-C++5/lib/zdll.lib 
+INCS =  -I"F:/Soft/Dev-C++5/include"  -I"F:/Soft/Dev-C++5/include/gtk-2.0/gtk"  -I"F:/Soft/Dev-C++5/include/gtk-2.0"  -I"F:/Soft/Dev-C++5/include/glib-2.0/glib"  -I"F:/Soft/Dev-C++5/lib/gtk-2.0/include"  -I"F:/Soft/Dev-C++5/lib/glib-2.0/include"  -I"F:/Soft/Dev-C++5/include/glib-2.0"  -I"F:/Soft/Dev-C++5/include/pango-1.0"  -I"F:/Soft/Dev-C++5/include/atk-1.0" 
+CXXINCS =  -I"F:/Soft/Dev-C++5/include/c++"  -I"F:/Soft/Dev-C++5/include/c++/mingw32"  -I"F:/Soft/Dev-C++5/include/c++/backward"  -I"F:/Soft/Dev-C++5/include"  -I"F:/Soft/Dev-C++5/include/gtk-2.0/gtk"  -I"F:/Soft/Dev-C++5/include/gtk-2.0"  -I"F:/Soft/Dev-C++5/include/glib-2.0/glib"  -I"F:/Soft/Dev-C++5/lib/gtk-2.0/include"  -I"F:/Soft/Dev-C++5/lib/glib-2.0/include"  -I"F:/Soft/Dev-C++5/include/glib-2.0"  -I"F:/Soft/Dev-C++5/include/pango-1.0"  -I"F:/Soft/Dev-C++5/include/atk-1.0" 
+BIN  = PhotoStorm.exe
+CXXFLAGS = $(CXXINCS)-mno-cygwin -mms-bitfields  
+CFLAGS = $(INCS)-mno-cygwin -mms-bitields  
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before PhotoStorm.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) $(LINKOBJ) -o "PhotoStorm.exe" $(LIBS)
+
+album.o: album.cpp
+	$(CPP) -c album.cpp -o album.o $(CXXFLAGS)
+
+design.o: design.cpp
+	$(CPP) -c design.cpp -o design.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+misc.o: misc.cpp
+	$(CPP) -c misc.cpp -o misc.o $(CXXFLAGS)
+
+photo.o: photo.cpp
+	$(CPP) -c photo.cpp -o photo.o $(CXXFLAGS)
+
+ps_dialogs.o: ps_dialogs.cpp
+	$(CPP) -c ps_dialogs.cpp -o ps_dialogs.o $(CXXFLAGS)
+
+ps_widgets.o: ps_widgets.cpp
+	$(CPP) -c ps_widgets.cpp -o ps_widgets.o $(CXXFLAGS)
+
+ps_wizards.o: ps_wizards.cpp
+	$(CPP) -c ps_wizards.cpp -o ps_wizards.o $(CXXFLAGS)
+
+lang/translate.o: lang/translate.cpp
+	$(CPP) -c lang/translate.cpp -o lang/translate.o $(CXXFLAGS)
+
+configs.o: configs.cpp
+	$(CPP) -c configs.cpp -o configs.o $(CXXFLAGS)
+
+mail.o: mail.cpp
+	$(CPP) -c mail.cpp -o mail.o $(CXXFLAGS)
+
+quotes.o: quotes.cpp
+	$(CPP) -c quotes.cpp -o quotes.o $(CXXFLAGS)
+
+ps_win32.o: ps_win32.cpp
+	$(CPP) -c ps_win32.cpp -o ps_win32.o $(CXXFLAGS)
+
+crypt.o: crypt.cpp
+	$(CPP) -c crypt.cpp -o crypt.o $(CXXFLAGS)
+
+plugins.o: plugins.cpp
+	$(CPP) -c plugins.cpp -o plugins.o $(CXXFLAGS)
+
+messages.o: messages.cpp
+	$(CPP) -c messages.cpp -o messages.o $(CXXFLAGS)
+
+PhotoStorm_private.res: PhotoStorm_private.rc 
+	$(WINDRES) -i PhotoStorm_private.rc -I rc -o PhotoStorm_private.res -O coff 

@@ -1,0 +1,49 @@
+BODY
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: arial;
+	font-size: 13px;
+	color: #000000;
+}
+
+A:link
+{
+	color: #2f4387;
+	text-decoration: none;
+}
+
+A:visited
+{
+	color: #2f4387;
+	text-decoration: none;
+}
+
+A:hover
+{
+	color: #2f4387;
+	text-decoration: underline;
+}
+
+P
+{
+	text-indent: 0.5in;
+}
+
+.pagina
+{
+	margin: 5px;
+}
+
+.titlu
+{
+	font-family: arial;
+	font-size: 16;
+	color: #000000;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+	margin: 5px;
+}

@@ -1,0 +1,26 @@
+<oaf_info>
+<oaf_server iid="OAFIID:PhotoStorm_Factory" type="exe"
+            location="/usr/local/bin/ps_applet">
+
+        <oaf_attribute name="repo_ids" type="stringv">
+                <item value="IDL:Bonobo/GenericFactory:1.0"/>
+                <item value="IDL:Bonobo/Unknown:1.0"/>
+        </oaf_attribute>
+        <oaf_attribute name="name" type="string" value="PhotoStorm"/>
+        <oaf_attribute name="description" type="string" value="PhotoStorm's desktop manager"/>
+</oaf_server>
+
+<oaf_server iid="OAFIID:PhotoStorm" type="factory"
+            location="OAFIID:PhotoStorm_Factory">
+
+        <oaf_attribute name="repo_ids" type="stringv">
+                <item value="IDL:GNOME/Vertigo/PanelAppletShell:1.0"/>
+                <item value="IDL:Bonobo/Control:1.0"/>
+                <item value="IDL:Bonobo/Unknown:1.0"/>
+        </oaf_attribute>
+        <oaf_attribute name="name" type="string" value="PhotoStorm"/>
+        <oaf_attribute name="description" type="string" value="PhotoStorm's desktop manager"/>
+        <oaf_attribute name="panel:category" type="string" value="Multimedia"/>
+        <oaf_attribute name="panel:icon" type="string" value="/usr/local/lib/photostorm/pics/picts/photostorm_applet.png"/>
+</oaf_server>
+</oaf_info>

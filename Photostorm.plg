@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Photostorm - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\alex\LOCALS~1\Temp\RSP26.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_MBCS" /Fp"Release/Photostorm.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Proiecte\PhotoStorm\album.cpp"
+"F:\Proiecte\PhotoStorm\design.cpp"
+"F:\Proiecte\PhotoStorm\main.cpp"
+"F:\Proiecte\PhotoStorm\misc.cpp"
+"F:\Proiecte\PhotoStorm\photo.cpp"
+"F:\Proiecte\PhotoStorm\ps_dialogs.cpp"
+"F:\Proiecte\PhotoStorm\ps_widgets.cpp"
+"F:\Proiecte\PhotoStorm\ps_wizards.cpp"
+"F:\Proiecte\PhotoStorm\lang\translate.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\alex\LOCALS~1\Temp\RSP26.tmp" 
+Creating temporary file "C:\DOCUME~1\alex\LOCALS~1\Temp\RSP27.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib glib-2.0.lib gtk-win32-2.0.lib gdk-win32-2.0.lib gobject-2.0.lib gdk_pixbuf-2.0.lib gthread-2.0.lib gmodule-2.0.lib pango-1.0.lib libz.lib bgd.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/Photostorm.pdb" /machine:I386 /out:"Release/Photostorm.exe" 
+.\Release\album.obj
+.\Release\design.obj
+.\Release\main.obj
+.\Release\misc.obj
+.\Release\photo.obj
+.\Release\ps_dialogs.obj
+.\Release\ps_widgets.obj
+.\Release\ps_wizards.obj
+.\Release\translate.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\alex\LOCALS~1\Temp\RSP27.tmp"
+<h3>Output Window</h3>
+Compiling...
+album.cpp
+F:\Proiecte\PhotoStorm\album.h(51) : warning C4091: 'typedef ' : ignored on left of 'struct _ps_album' when no variable is declared
+F:\Proiecte\PhotoStorm\album.cpp(144) : error C2065: 'strcasecmp' : undeclared identifier
+design.cpp
+F:\Proiecte\PhotoStorm\album.h(51) : warning C4091: 'typedef ' : ignored on left of 'struct _ps_album' when no variable is declared
+F:\Proiecte\PhotoStorm\design.cpp(1259) : warning C4101: 'pict' : unreferenced local variable
+main.cpp
+F:\Proiecte\PhotoStorm\album.h(51) : warning C4091: 'typedef ' : ignored on left of 'struct _ps_album' when no variable is declared
+F:\Proiecte\PhotoStorm\main.cpp(34) : error C2065: 'mkdir' : undeclared identifier
+misc.cpp
+photo.cpp
+F:\Proiecte\PhotoStorm\album.h(51) : warning C4091: 'typedef ' : ignored on left of 'struct _ps_album' when no variable is declared
+F:\Proiecte\PhotoStorm\photo.cpp(1133) : error C2374: 'l' : redefinition; multiple initialization
+        F:\Proiecte\PhotoStorm\photo.cpp(1128) : see declaration of 'l'
+F:\Proiecte\PhotoStorm\photo.cpp(1153) : error C2374: 'i' : redefinition; multiple initialization
+        F:\Proiecte\PhotoStorm\photo.cpp(1123) : see declaration of 'i'
+ps_dialogs.cpp
+F:\Proiecte\PhotoStorm\album.h(51) : warning C4091: 'typedef ' : ignored on left of 'struct _ps_album' when no variable is declared
+F:\Proiecte\PhotoStorm\ps_dialogs.cpp(490) : warning C4805: '==' : unsafe mix of type 'int' and type 'bool' in operation
+F:\Proiecte\PhotoStorm\ps_dialogs.cpp(882) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+F:\Proiecte\PhotoStorm\ps_dialogs.cpp(884) : warning C4244: 'argument' : conversion from 'long' to 'unsigned short', possible loss of data
+ps_widgets.cpp
+F:\Proiecte\PhotoStorm\album.h(51) : warning C4091: 'typedef ' : ignored on left of 'struct _ps_album' when no variable is declared
+ps_wizards.cpp
+F:\Proiecte\PhotoStorm\album.h(51) : warning C4091: 'typedef ' : ignored on left of 'struct _ps_album' when no variable is declared
+F:\Proiecte\PhotoStorm\ps_wizards.cpp(103) : warning C4805: '==' : unsafe mix of type 'int' and type 'bool' in operation
+F:\Proiecte\PhotoStorm\ps_wizards.cpp(178) : warning C4805: '==' : unsafe mix of type 'int' and type 'bool' in operation
+F:\Proiecte\PhotoStorm\ps_wizards.cpp(215) : warning C4805: '==' : unsafe mix of type 'int' and type 'bool' in operation
+F:\Proiecte\PhotoStorm\ps_wizards.cpp(234) : warning C4805: '==' : unsafe mix of type 'int' and type 'bool' in operation
+translate.cpp
+F:\Proiecte\PhotoStorm\lang\translate.cpp(95) : error C2065: 'strcasecmp' : undeclared identifier
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+Photostorm.exe - 5 error(s), 15 warning(s)
+</pre>
+</body>
+</html>
